@@ -2,11 +2,21 @@ body, html {
     height: 100%;
 }
 
+
+@media (min-width: 1200px) {
+    body .container {
+        width: 1040px;
+    }
+}
+
+
 * {
     /*border: 1px solid black;*/
     box-sizing: border-box;
 }
- .airbnb-banner {
+
+
+.container-fluid, .airbnb-banner {
     background: url("http://www.tours.com/wp-content/uploads/2018/10/02-airbnb-launches-luxury-collection.jpg") no-repeat center;
     background-size: cover;
     height: 73%;
@@ -14,18 +24,14 @@ body, html {
 
 .form-section {
     background-color: white;
+
     margin-top: 7vh;
     padding: 25px;
     border-radius: 4px;
 }
 
-.form-section .col-md-12 {
-    padding-top: 15px;
-}
-
 .form-section .search-btn {
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .form-section .col-md-6 {
@@ -293,29 +299,21 @@ margin-top: 15px;
     }
 
     select {
-
         background-position-x: 250px;
     }
-
-
-
     /*Mid Section 3*/
     .row .col-xs-12 .booked {
         width: 100%;
         border: 1px solid black;
         margin: auto;
     }
-
     /*Mid Section 5 */
     .row .mid-section-5 {
         display: none;
     }
-
-
     .mnb .col-md-4{
         margin-top: 10px;
     }
-
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
