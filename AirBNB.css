@@ -6,18 +6,17 @@ body, html {
     /*border: 1px solid black;*/
     box-sizing: border-box;
 }
-
-.container-fluid {
+ .airbnb-banner {
     background: url("http://www.tours.com/wp-content/uploads/2018/10/02-airbnb-launches-luxury-collection.jpg") no-repeat center;
     background-size: cover;
-    height: 70%
+    height: 73%;
 }
 
 .form-section {
     background-color: white;
-    margin-left: 20vw;
-    margin-top: 6vh;
-    padding: 10px;
+    margin-top: 7vh;
+    padding: 25px;
+    border-radius: 4px;
 }
 
 .form-section .col-md-12 {
@@ -35,14 +34,18 @@ body, html {
 
 .form-section h2 {
     font-weight: bolder;
-    margin-left: 10px;
+    margin-left: 15px;
+    font-size: 32px;
+    margin-top: 10px;
+    align-content: center;
 }
 
-.container-fluid .row .form-section h4 {
+.airbnb-banner .container .row .form-section h4 {
     padding-top: 5px;
-    margin-left: 10px;
+    margin-left: 15px;
     font-weight: lighter;
-
+    line-height: 28px;
+    font-size: 20px;
 }
 
 .form-section label {
@@ -50,33 +53,40 @@ body, html {
 }
 
 .sbtn {
+    margin-top: 10px;
+    margin-bottom: 8px;
     line-height: 26px;
     padding-top: 10px;
     font-size: 16px;
     font-weight: bolder;
-    border-radius: 5px;
+    border-radius: 4px;
     background: #FF5A5F;
     color: white;
     width: 100%;
     padding-bottom: 10px;
+    border: none;
 }
 
 input[type=text] {
     width: 100%;
     padding-left: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     font-size: 15px;
     font-weight: bolder;
+    border-radius: 4px;
+    border-color: #ebebeb;
 }
 
 input[type=date] {
     width: 100%;
     padding-left: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     font-size: 15px;
     font-weight: bolder;
+    border-radius: 4px;
+    border-color: #ebebeb;
 }
 
 select {
@@ -85,12 +95,15 @@ select {
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 4px;
+    font-size: 15px;
+    border-color: #ebebeb;
+
 
     /*Thay doi icon select*/
 
     background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
     -webkit-appearance: none;
-    background-position-x: 160px;
+    background-position-x: 180px;
 }
 
 /*Mid  Section 1*/
@@ -122,7 +135,7 @@ select {
     margin: auto;
 }
 
-.container .row .col-md-4 .zxc img {
+.container .row .col-md-4 .zxc .image-wrapper img {
     width: 15%;
     border-radius: 50%;
     float: left;
@@ -136,13 +149,20 @@ select {
 }
 
 .container .row .col-md-4 .zxc h4 {
-    width: 30%;
-    float: left;
     font-size: 14px;
     margin-left: 15px;
+    display: inline-block;
 }
 
 /*Mid Section 2*/
+.mnb .col-md-4{
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    margin-top:20px;
+    height:240px;
+
+}
+
 .container .row .col-md-4 i {
     padding-top: 30px;
 }
@@ -204,7 +224,7 @@ margin-top: 15px;
 /*Mid Section 5*/
 
 .row .mid-section-5 {
-    padding-top: 100px;
+    padding-top:50px;
 }
 
 .row .col-md-3 h5 {
@@ -233,15 +253,22 @@ margin-top: 15px;
     margin-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
 
+.vbn {
+    border-top: 1px solid #ebebeb;
+    margin-top:50px;
 }
 
 /*Bottom Section*/
 
-.row .col-md-8 {
+.row .bottom {
+    margin-top:15px;
     padding-top: 20px;
     font-size: 15px;
     padding-bottom: 20px;
+    border-top: 1px solid #ebebeb
+
 }
 
 /*// Extra small devices (portrait phones, less than 576px)*/
@@ -253,12 +280,10 @@ margin-top: 15px;
     /*Mid Section 1*/
     .row .col-xs-12 {
         margin: auto;
-        border: 1px solid black;
     }
 
     .row .col-xs-12 .image {
         width: 100%;
-        border: 1px solid black;
         margin: auto;
 
     }
@@ -272,9 +297,7 @@ margin-top: 15px;
         background-position-x: 250px;
     }
 
-    div.container {
-        margin-top: 220px;
-    }
+
 
     /*Mid Section 3*/
     .row .col-xs-12 .booked {
@@ -288,6 +311,11 @@ margin-top: 15px;
         display: none;
     }
 
+
+    .mnb .col-md-4{
+        margin-top: 10px;
+    }
+
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
@@ -295,25 +323,10 @@ margin-top: 15px;
 }
 
 /*// Medium devices (tablets, 768px and up)*/
-/*@media (min-width: 768px) and (max-width: 991.98px) {*/
-    /*.container {*/
-        /*background-color: #E8EAF6;*/
-        /*width: 600px;*/
-        /*overflow-x: auto;    }*/
-/*}*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
 
-/*.container .row {*/
-    /*list-style: none;*/
-    /*padding: 0;*/
-    /*margin: 12px;*/
-    /*display: inline-flex;*/
-/*}*/
 
-/*.container .row .col-md-4 {*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-/*}*/
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -321,6 +334,9 @@ margin-top: 15px;
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+body .container {
+    width: 1040px;
+}
 }
 
 
