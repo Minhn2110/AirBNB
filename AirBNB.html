@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="Test.css">
+    <link rel="stylesheet" href="AirBNB.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -23,78 +23,81 @@
 
 </head>
 <body>
-<div class="container-fluid">
+<div class="airbnb-banner">
     <!--Form Section-->
-    <div class="row">
-        <div class="col-md-3 col-xs-12 form-section">
-            <h2>Find homes in United States on Airbnb</h2>
-            <h4>Discover entire homes and private rooms perfect for any trip.</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12 form-section">
+                <h2>Find homes in United States on Airbnb</h2>
+                <h4>Discover entire homes and private rooms perfect for any trip.</h4>
 
-            <div class="col-md-12">
-                <label for="inputsm">WHERE</label>
-                <input class="form-control input-sm" id="inputsm" type="text" value="Anywhere">
-            </div>
-
-
-            <div class="col-md-6">
-                <label for="pwd">CHECK IN</label>
-                <input type="date" class="form-control" id="pwd">
-            </div>
+                <div class="col-xs-12 col-md-12">
+                    <label for="inputsm">WHERE</label>
+                    <input class="form-control input-sm" id="inputsm" type="text" value="Anywhere">
+                </div>
 
 
-
-            <div class="col-md-6">
-                <label for="pwd">CHECK OUT</label>
-                <input type="date" class="form-control" id="pwd">
-            </div>
+                <div class="col-md-6">
+                    <label for="pwd">CHECK IN</label>
+                    <input type="date" class="form-control" id="pwd">
+                </div>
 
 
 
-            <div class="col-md-6">
-                <label for="pwd">ADULTS</label>
-                <select id="country" name="country">
-                    <option value="1">1 adult</option>
-                    <option value="2">2 adult</option>
-                    <option value="3">3 adult</option>
-                </select>
-            </div>
+                <div class="col-md-6">
+                    <label for="pwd">CHECK OUT</label>
+                    <input type="date" class="form-control" id="pwd">
+                </div>
 
 
 
-            <div class="col-md-6">
-                <label for="pwd">CHILDREN</label>
-                <select id="country" name="country">
-                    <option value="1">0 Children</option>
-                    <option value="2">1 Children</option>
-                    <option value="3">2 Children</option>
-                    <option value="3">3 Children</option>
-                    <option value="3">4 Children</option>
-                    <option value="3">5 Children</option>
-                </select>
-            </div>
+                <div class="col-md-6">
+                    <label for="pwd">ADULTS</label>
+                    <select id="country" name="country">
+                        <option value="1">1 adult</option>
+                        <option value="2">2 adult</option>
+                        <option value="3">3 adult</option>
+                    </select>
+                </div>
 
 
-            <div class="col-md-12 search-btn">
-                <!--<input type="button" class="_taglxzq">-->
-                <button type="submit" class="sbtn">Search</button>
+
+                <div class="col-md-6">
+                    <label for="pwd">CHILDREN</label>
+                    <select id="country" name="country">
+                        <option value="1">0 Children</option>
+                        <option value="2">1 Children</option>
+                        <option value="3">2 Children</option>
+                        <option value="3">3 Children</option>
+                        <option value="3">4 Children</option>
+                        <option value="3">5 Children</option>
+                    </select>
+                </div>
+
+
+                <div class="col-md-12">
+                    <div class= "search-btn">
+                        <!--<input type="button" class="_taglxzq">-->
+                        <button type="submit" class="sbtn">Search</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-
-
-
-
-
+</div>
 
 <!--Mid Section 1 -->
-<div class="container">
+<div class="container unit-slider">
     <div class="row">
             <h3 class="section-1">What guests are saying about homes in United States</h3>
             <h4>United States homes were rated 4.8 out of 5 stars with 29,500,000+ reviews</h4>
         <br>
             <div class="col-md-4">
-                <img src="https://a0.muscache.com/im/pictures/3a887493-b907-42e3-a3cd-a940552c826d.jpg?aki_policy=large" alt="">
+                <div>
+                    <a href="https://google.com" target="_blank">
+                        <img src="https://a0.muscache.com/im/pictures/3a887493-b907-42e3-a3cd-a940552c826d.jpg?aki_policy=large" alt="">
+                    </a>
+                </div>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -102,7 +105,9 @@
                 <span class="fa fa-star checked"></span>
                 <p>Stewart was fantastic. He made great recommendations on things to do, restaurants to try, etc. He's very accommodating. He </p>
                 <div class="zxc">
-                    <img src="https://a0.muscache.com/im/users/3381096/profile_pic/1346021845/original.jpg?aki_policy=large" alt="">
+                    <div class="image-wrapper">
+                        <img src="https://a0.muscache.com/im/users/3381096/profile_pic/1346021845/original.jpg?aki_policy=large" alt="">
+                    </div>
                     <h4> <strong>Katie</strong>
                         <br>
                         United States.
