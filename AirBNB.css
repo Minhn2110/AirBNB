@@ -13,6 +13,7 @@ body, html {
 * {
     /*border: 1px solid black;*/
     box-sizing: border-box;
+    font-family:Circular;
 }
 
 
@@ -39,19 +40,22 @@ body, html {
 }
 
 .form-section h2 {
-    font-weight: bolder;
+    font-weight: bold;
     margin-left: 15px;
-    font-size: 32px;
+    font-size: 29px;
     margin-top: 10px;
     align-content: center;
+    line-height: 36px;
+    color: #484848;
+letter-spacing: -1px;
 }
 
 .airbnb-banner .container .row .form-section h4 {
     padding-top: 5px;
     margin-left: 15px;
-    font-weight: lighter;
     line-height: 28px;
-    font-size: 20px;
+    font-size: 19px;
+    padding-bottom:10px;
 }
 
 .form-section label {
@@ -90,9 +94,10 @@ input[type=date] {
     padding-top: 25px;
     padding-bottom: 25px;
     font-size: 15px;
-    font-weight: bolder;
     border-radius: 4px;
     border-color: #ebebeb;
+    font-weight: 600;
+    color:#484848;
 }
 
 select {
@@ -121,7 +126,12 @@ select {
 .row h3 {
     padding-top: 25px;
     margin-left: 13px;
-    font-weight: bolder;
+    font-weight:800;
+    font-size:22px;
+    color: #484848;
+    line-height:30px;
+    letter-spacing: -1.5px;
+
 }
 
 .row h4 {
@@ -134,6 +144,11 @@ select {
 
 .container .row .col-md-4 p {
     padding-top: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    color:#484848;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-weight:400;
 }
 
 .container .row .col-md-4 img {
@@ -166,6 +181,10 @@ select {
     border-bottom: 1px solid #ebebeb;
     margin-top:20px;
     height:240px;
+    line-height:22px;
+    color:#484848;
+    font-size:14px;
+    font-weight:400;
 
 }
 
@@ -178,39 +197,49 @@ margin-top: 15px;
     margin-left:0;
 }
 
+.container .row .col-md-4 h4.poi {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
 /*Mid section 3*/
 
 .container .row .col-md-3 img {
     width: 100%;
 }
-
 .row .col-md-3 p.section-3 {
     padding-top: 4px;
     font-weight: bolder;
+    font-size:11px;
+    line-height: 23px;
 }
-
 .row .col-md-3 h4 {
-    font-weight: bolder;
+    font-weight: 800;
     margin: 0;
-}
+    font-size:15px;
+    line-height: 23px;
 
+}
 .row .col-md-3 p {
     margin: 0;
     padding: 0;
+    font-size:13px;
+    line-height: 18px;
 }
-
-.row .col-md-3 span {
+.row .col-md-3 span.fa-star {
     font-size: 10px;
+    letter-spacing: -6px;
 }
-
+.row .col-md-3 span {
+    font-size: 9px;
+}
 .row .col-md-3 span.others-information-section-3 {
     font-size: 12px;
     font-weight: bolder;
 }
-
 .row .col-md-3 h4.show-all-btn {
     padding-top: 40px;
-    font-size: 17px;
+    font-size: 15px;
     color: #008489;
 }
 
@@ -225,12 +254,21 @@ margin-top: 15px;
     background: #008489;
     color: white;
     margin-left: 10px;
+    border:none;
 }
 
 /*Mid Section 5*/
 
 .row .mid-section-5 {
     padding-top:50px;
+}
+
+.mid-section-5 a {
+    font-size:14px;
+    color:#767676;
+    display:block;
+    line-height: 20px;
+
 }
 
 .row .col-md-3 h5 {
@@ -261,7 +299,10 @@ margin-top: 15px;
     padding-bottom: 10px;
 }
 
-.vbn {
+
+
+section.md5 {
+    width:100%;
     border-top: 1px solid #ebebeb;
     margin-top:50px;
 }
@@ -273,7 +314,8 @@ margin-top: 15px;
     padding-top: 20px;
     font-size: 15px;
     padding-bottom: 20px;
-    border-top: 1px solid #ebebeb
+    border-top: 1px solid #ebebeb;
+
 
 }
 
