@@ -22,34 +22,63 @@
 body, html {
     height: 100%;
 }
-
-
-@media (min-width: 1200px) {
-    body .container {
-        width: 1040px;
-    }
-}
-
-
 * {
     /*border: 1px solid black;*/
     box-sizing: border-box;
     font-family: 'Circular';
 }
 
+/*Form Section*/
 
-.container-fluid, .airbnb-banner {
+.airbnb-desktop-banner {
     background: url("http://www.tours.com/wp-content/uploads/2018/10/02-airbnb-launches-luxury-collection.jpg") no-repeat center;
     background-size: cover;
     height: 73%;
 }
 
+.airbnb-mobile-banner {
+     background-image: linear-gradient(351.58deg, #00383E -0.02%, #17989A 50%, #1BABA8 80%), radial-gradient(228.77px at 31.86% 0%, #19A2A0 0%, rgba(0, 122, 135, 0.9) 100%) !important;
+     background-size: cover;
+     height: 20%;
+ }
+
 .form-section {
     background-color: white;
-
     margin-top: 7vh;
     padding: 25px;
     border-radius: 4px;
+}
+
+.form-section .heading-form-section {
+    font-weight: 700;
+    margin-left: 15px;
+    font-size: 32px;
+    margin-top: 10px;
+    align-content: center;
+    line-height: 36px;
+    color: #484848;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+}
+
+.form-section h4.slogan-form-section {
+    letter-spacing: 0;
+    color: #484848;
+    font-size: 19px;
+    padding-top: 5px;
+    margin-left: 15px;
+    line-height: 28px;
+    padding-bottom: 10px;
+}
+
+.form-section .label label {
+    color: #484848;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    margin-bottom: 7px;
+    font-weight: 100;
+    margin-left: -7px;
 }
 
 .form-section .search-btn {
@@ -58,29 +87,6 @@ body, html {
 
 .form-section .col-md-6 {
     padding-top: 15px;
-}
-
-.form-section h2 {
-    font-weight: bold;
-    margin-left: 15px;
-    font-size: 29px;
-    margin-top: 10px;
-    align-content: center;
-    line-height: 36px;
-    color: #484848;
-letter-spacing: -1px;
-}
-
-.airbnb-banner .container .row .form-section h4 {
-    padding-top: 5px;
-    margin-left: 15px;
-    line-height: 28px;
-    font-size: 19px;
-    padding-bottom:10px;
-}
-
-.form-section label {
-    font-size: 12px;
 }
 
 .sbtn {
@@ -117,8 +123,8 @@ input[type=date] {
     font-size: 15px;
     border-radius: 4px;
     border-color: #ebebeb;
-    font-weight: 600;
-    color:#484848;
+    /*font-weight: ;*/
+    color: #484848;
 }
 
 select {
@@ -129,10 +135,7 @@ select {
     border-radius: 4px;
     font-size: 15px;
     border-color: #ebebeb;
-
-
     /*Thay doi icon select*/
-
     background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
     -webkit-appearance: none;
     background-position-x: 180px;
@@ -144,22 +147,30 @@ select {
     color: #008489
 }
 
-.row h3 {
+.container .row .header-section-1 {
     padding-top: 25px;
     margin-left: 13px;
     font-weight:800;
-    font-size:22px;
+    font-size:24px;
     color: #484848;
     line-height:30px;
-    letter-spacing: -1.5px;
-
 }
 
-.row h4 {
+.container .row .none-display-mobile {
     margin-left: 13px;
+    font-size:16px;
+    font-weight: 400;
+    line-height: 22px;
+    color:#484848;
+    letter-spacing: -0.5px;
 }
 
-.container .row .col-md-4 span {
+.container .row .col-md-4 img {
+    width: 100%;
+    margin: auto;
+}
+
+.container .row .col-md-4 .star-icon-section-1 span {
     padding-top: 15px;
 }
 
@@ -168,14 +179,9 @@ select {
     font-size: 14px;
     line-height: 18px;
     color:#484848;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-    font-weight:400;
+    font-weight: 400;
 }
 
-.container .row .col-md-4 img {
-    width: 100%;
-    margin: auto;
-}
 
 .container .row .col-md-4 .zxc .image-wrapper img {
     width: 15%;
@@ -197,7 +203,7 @@ select {
 }
 
 /*Mid Section 2*/
-.mnb .col-md-4{
+ .section-2 .col-md-4{
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
     margin-top:20px;
@@ -209,54 +215,79 @@ select {
 
 }
 
-.container .row .col-md-4 i {
+.container .row .icon-section-2 {
+    color: #008489;
     padding-top: 30px;
+
 }
 
-.container .row .col-md-4 h4 {
-margin-top: 15px;
-    margin-left:0;
+.container .row .col-md-4 h4.header-section-2 {
+    margin-top: 15px;
+    margin-left: 0;
+    font-weight: 800;
+    font-size:16px;
+    color:#484848;
+    line-height: 22px;
 }
 
-.container .row .col-md-4 h4.poi {
+.container .row .col-md-4 h4.introduction-section-2 {
     margin-top: 15px;
     font-size: 14px;
+    line-height: 18px;
+    color: #484848;
+    font-weight: 400;
 }
 
 /*Mid section 3*/
 
-.container .row .col-md-3 img {
+.container .row .col-md-3 a img {
     width: 100%;
 }
-.row .col-md-3 p.section-3 {
-    padding-top: 4px;
-    font-weight: bolder;
-    font-size:11px;
-    line-height: 23px;
+.row .col-md-3 p.Header-section-3 {
+    padding-top: 8px;
+    font-weight: 800;
+    font-size:12px;
+    line-height: 16px;
+    color:#341e13;
 }
-.row .col-md-3 h4 {
+.row .col-md-3 h4.hname-section-3 {
     font-weight: 800;
     margin: 0;
-    font-size:15px;
-    line-height: 23px;
-
+    font-size:16px;
+    line-height: 22px;
+    color:#484848;
 }
-.row .col-md-3 p {
+
+.row .col-md-3 span.price {
     margin: 0;
     padding: 0;
-    font-size:13px;
+    font-size:14px;
     line-height: 18px;
+    font-weight: 400;
+    color:#484848;
 }
-.row .col-md-3 span.fa-star {
+
+.row .col-md-3 span.status {
+    margin: 0;
+    padding: 0;
+    font-size:14px;
+    line-height: 18px;
+    font-weight: 400;
+    color:#484848;
+
+
+}
+.row .col-md-3 .icon-section-3 span.fa-star {
     font-size: 10px;
     letter-spacing: -6px;
 }
-.row .col-md-3 span {
-    font-size: 9px;
-}
-.row .col-md-3 span.others-information-section-3 {
+
+.row .col-md-3 .icon-section-3 .others-information-section-3 {
     font-size: 12px;
-    font-weight: bolder;
+    font-weight: 600;
+    line-height: 16px;
+    color:#484848;
+    margin-left:5px;
 }
 .row .col-md-3 h4.show-all-btn {
     padding-top: 40px;
@@ -278,23 +309,41 @@ margin-top: 15px;
     border:none;
 }
 
+.container .row .intro-section-4 {
+    margin-left: 13px;
+    font-size:16px;
+    font-weight: 400;
+    line-height: 22px;
+    color:#484848;
+}
+
 /*Mid Section 5*/
+
+section.md5 {
+    width:100%;
+    border-top: 1px solid #ebebeb;
+    margin-top:50px;
+}
 
 .row .mid-section-5 {
     padding-top:50px;
+}
+
+.row .col-md-3 .header-section-5 {
+    font-size:14px;
+    font-weight: 800;
+    line-height: 18px;
+    color:#484848;
 }
 
 .mid-section-5 a {
     font-size:14px;
     color:#767676;
     display:block;
-    line-height: 20px;
-
+    line-height: 18px;
+    font-weight: 600;
 }
 
-.row .col-md-3 h5 {
-    font-weight: bolder;
-}
 
 .row .col-md-3 .fa-facebook-f {
     font-weight: bolder;
@@ -320,14 +369,6 @@ margin-top: 15px;
     padding-bottom: 10px;
 }
 
-
-
-section.md5 {
-    width:100%;
-    border-top: 1px solid #ebebeb;
-    margin-top:50px;
-}
-
 /*Bottom Section*/
 
 .row .bottom {
@@ -336,47 +377,146 @@ section.md5 {
     font-size: 15px;
     padding-bottom: 20px;
     border-top: 1px solid #ebebeb;
-
-
 }
 
 /*// Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
-    .col-md-3 {
-        margin: auto;
-    }
+
+/*@media (max-width: 575.98px) {*/
+    /*!*.col-md-3 {*!*/
+        /*!*margin: auto;*!*/
+    /*!*}*!*/
 
     /*Mid Section 1*/
-    .row .col-xs-12 {
-        margin: auto;
+
+
+    /*.row .col-xs-12 .image {*/
+        /*width: 100%;*/
+        /*margin: auto;*/
+
+    /*}*/
+
+    /*.row .col-xs-12 .image img {*/
+        /*margin: auto;*/
+    /*}*/
+
+
+    /*select {*/
+        /*background-position-x: 250px;*/
+    /*}*/
+
+
+    /*!*Mid Section 3*!*/
+    /*.row .col-xs-12 .booked {*/
+        /*width: 100%;*/
+        /*border: 1px solid black;*/
+        /*margin: auto;*/
+    /*}*/
+
+
+    /*body .airbnb-mobile-banner .container{*/
+        /*width:375px;*/
+    /*}*/
+
+    /*body .container {*/
+        /*width:320px;*/
+    /*}*/
+    /*.container .row .none-display-mobile {*/
+        /*display:none;*/
+    /*}*/
+    /*.container .row .none-display-destop {*/
+        /*font-size:6px;*/
+    /*}*/
+    /**/
+/*}*/
+
+/*CSS for iphone 5 SE*/
+
+@media (min-width: 320px) and (max-width: 579px) {
+
+    body .airbnb-mobile-banner .container{
+        width:375px;
+        /*width:320px;*/
+
     }
 
-    .row .col-xs-12 .image {
-        width: 100%;
-        margin: auto;
-
+    body .container {
+        width:370px;
+        /*width:320px;*/
+    }
+    .container .row .none-display-mobile {
+        display:none;
+    }
+    .airbnb-mobile-banner {
+        background-image: linear-gradient(351.58deg, #00383E -0.02%, #17989A 50%, #1BABA8 80%), radial-gradient(228.77px at 31.86% 0%, #19A2A0 0%, rgba(0, 122, 135, 0.9) 100%);
+        background-size: cover;
+        height: 18vh;
+    }
+    .airbnb-desktop-banner {
+        display:none;
     }
 
-    .row .col-xs-12 .image img {
-        margin: auto;
+    .form-section .heading-form-section  {
+        color:white;
+        font-size:24px;
+        width:100%;
+        letter-spacing: -1px;
+        margin:0;
+        padding-left:13px;
     }
 
-    select {
-        background-position-x: 250px;
-    }
-    /*Mid Section 3*/
-    .row .col-xs-12 .booked {
-        width: 100%;
-        border: 1px solid black;
-        margin: auto;
-    }
-    /*Mid Section 5 */
-    .row .mid-section-5 {
+    .form-section .slogan-form-section {
         display: none;
     }
-    .mnb .col-md-4{
-        margin-top: 10px;
+
+    .airbnb-mobile-banner .container .row .form-section {
+        margin:0;
+        background-color:transparent;
+        padding-top:55px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
     }
+
+    .form-section .label label {
+        padding-top: 25px;
+    }
+
+    .airbnb-mobile-banner .container .row .form-section .col-md-12 .search-btn .sbtn {
+        margin-top: 30px;
+        margin-bottom:30px;
+    }
+
+    /*Mid Section 1 Iphone5 SE*/
+
+    .container .row .header-section-1 {
+        font-size:18px;
+        line-height:26px;
+
+    }
+    .container .row h4.none-display-destop {
+        padding-left:13px;
+        padding-right:10px;
+    }
+
+    /*Mid Section 2 For Mobile*/
+
+    .container .row .zxc {
+        padding-bottom:10px;
+    }
+
+
+
+    /*Mid Section 5 */
+    section.md5 {
+        display: none;
+    }
+
+    /*Bottom Section Mobile*/
+
+    .mnb .col-md-4{
+    margin-top: 10px;
+    }
+
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
@@ -398,6 +538,14 @@ section.md5 {
 body .container {
     width: 1040px;
 }
+
+    .airbnb-mobile-banner {
+        display:none;
+    }
+
+    .container .row .none-display-destop {
+        display:none;
+    }
 }
 
 
